@@ -1,7 +1,8 @@
 ﻿Imports Un4seen.Bass
 
 Namespace My
-    ' The following events are available for MyApplication:
+
+    ' The following events are available for MyApplication:
     ' 
     ' Startup: Raised when the application starts, before the startup form is created.
     ' Shutdown: Raised after all application forms are closed.  This event is not raised if the application terminates abnormally.
@@ -14,9 +15,10 @@ Namespace My
                 MsgBox("This application requires an internet connection to run.", MsgBoxStyle.Critical, "Network connection unavailable")
                 End
             End If
-            Dim BassRegMail As String = "tobiaqs@yahoo.nl"
-            Dim BassRegKey As String = "2X182428163435"
-            BassNet.Registration(BassRegMail, BassRegKey)
+            ' registration can be obtained here: http://bass.radio42.com/
+            Dim BassRegMail As String = ""
+            Dim BassRegKey As String = ""
+            ' BassNet.Registration(BassRegMail, BassRegKey)
         End Sub
 
         Private Sub app_NetworkAvailabilityChanged() Handles Me.NetworkAvailabilityChanged
