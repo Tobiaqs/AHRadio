@@ -25,6 +25,10 @@ Namespace My
                 End
             End If
         End Sub
+
+        Private Sub app_StartupNextInstance() Handles Me.StartupNextInstance
+            Player.BringToFront()
+        End Sub
     End Class
 
 
