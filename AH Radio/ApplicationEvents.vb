@@ -1,4 +1,4 @@
-﻿Imports Un4seen.Bass
+Imports Un4seen.Bass
 
 Namespace My
 
@@ -15,9 +15,9 @@ Namespace My
                 MsgBox("This application requires an internet connection to run.", MsgBoxStyle.Critical, "Network connection unavailable")
                 End
             End If
-            Dim BassRegMail As String = "tobiaqs@yahoo.nl"
-            Dim BassRegKey As String = "2X182428163435"
-            BassNet.Registration(BassRegMail, BassRegKey)
+            'Dim BassRegMail As String = ""
+            'Dim BassRegKey As String = ""
+            'BassNet.Registration(BassRegMail, BassRegKey)
 
             Try
                 Bass.BASS_Init(-1, 44100, BASSInit.BASS_DEVICE_DEFAULT, Player.Handle, Nothing)
