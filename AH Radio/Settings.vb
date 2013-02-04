@@ -52,6 +52,9 @@
         If Player.visOn Then
             VisCheck.Checked = True
         End If
+
+        Me.Show()
+        VisCheck.Focus()
     End Sub
 
     Private Sub BClose_Click(sender As Object, e As EventArgs) Handles BClose.Click

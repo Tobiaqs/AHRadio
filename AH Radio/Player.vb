@@ -5,7 +5,7 @@ Imports Un4seen.Bass.Misc
 
 Public Class Player
 
-    Public version As Integer = 4
+    Public version As Integer = 5
 
     Public drawing As New Visuals
 
@@ -38,14 +38,6 @@ Public Class Player
 
         NowPlayingUpdater.RunWorkerAsync()
         UpdateChecker.RunWorkerAsync()
-
-        If Bass.BASS_Init(-1, 44100, BASSInit.BASS_DEVICE_DEFAULT, Me.Handle, Nothing) = False Then
-            If Bass.BASS_ErrorGetCode = 23 Then
-                MsgBox("No audio devices available.")
-            Else
-                MsgBox("The application can't start due to the error number " & Bass.BASS_ErrorGetCode)
-            End If
-        End If
     End Sub
 #Region "Play/pause"
     Public Sub BSwitch_Click() Handles BSwitch.Click, BSwitch.DoubleClick

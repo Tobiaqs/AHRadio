@@ -73,7 +73,7 @@ Partial Class Player
         '
         'NP
         '
-        Me.NP.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.NP.BackColor = System.Drawing.Color.Black
         Me.NP.Cursor = System.Windows.Forms.Cursors.Hand
         Me.NP.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NP.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(187, Byte), Integer), CType(CType(0, Byte), Integer))

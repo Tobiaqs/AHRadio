@@ -68,6 +68,7 @@ Partial Class Settings
         'BClose
         '
         Me.BClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BClose.ForeColor = System.Drawing.Color.White
         Me.BClose.Location = New System.Drawing.Point(259, 228)
         Me.BClose.Name = "BClose"
         Me.BClose.Size = New System.Drawing.Size(75, 23)
@@ -78,6 +79,7 @@ Partial Class Settings
         'BSave
         '
         Me.BSave.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BSave.ForeColor = System.Drawing.Color.White
         Me.BSave.Location = New System.Drawing.Point(178, 228)
         Me.BSave.Name = "BSave"
         Me.BSave.Size = New System.Drawing.Size(75, 23)

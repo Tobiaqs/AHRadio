@@ -15,10 +15,16 @@ Namespace My
                 MsgBox("This application requires an internet connection to run.", MsgBoxStyle.Critical, "Network connection unavailable")
                 End
             End If
-            ' registration can be obtained here: http://bass.radio42.com/
-            Dim BassRegMail As String = ""
-            Dim BassRegKey As String = ""
-            ' BassNet.Registration(BassRegMail, BassRegKey)
+            Dim BassRegMail As String = "tobiaqs@yahoo.nl"
+            Dim BassRegKey As String = "2X182428163435"
+            BassNet.Registration(BassRegMail, BassRegKey)
+
+            Try
+                Bass.BASS_Init(-1, 44100, BASSInit.BASS_DEVICE_DEFAULT, Player.Handle, Nothing)
+            Catch
+                MsgBox("The application can't start due a problem with the BASS library.")
+                End
+            End Try
         End Sub
 
         Private Sub app_NetworkAvailabilityChanged() Handles Me.NetworkAvailabilityChanged
